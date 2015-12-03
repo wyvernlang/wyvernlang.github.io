@@ -1,0 +1,22 @@
+{
+  "name": "website-wyvern",
+  "authors": [
+    "Robbie McKinstry rem89@pitt.edu"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "wyvernlang.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-elements": "polymerelements/paper-elements#~1.0.6",
+    "iron-elements": "polymerelements/iron-elements#~1.0.4"
+  }
+}
