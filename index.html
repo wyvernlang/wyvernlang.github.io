@@ -15,23 +15,23 @@
         <link rel="import" href="bower_components/paper-styles/paper-styles.html">
         <link rel="import" href="bower_components/paper-card/paper-card.html">
 
-        <link rel="import" href="dark-side/dark-side.html">
-        <link rel="stylesheet" href="dark-side/dark-side.css" type="text/css">
+        <link rel="import" href="vendor/dark-side/dark-side.html">
+        <link rel="stylesheet" href="vendor/dark-side/dark-side.css" type="text/css">
         <link rel="stylesheet" href="assets/stylesheets/index.css" type="text/css">
         <link rel="stylesheet" href="vendor/prism/prism.css">
-
+        <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Libre+Baskerville:700' type='text/css'>
         <title>Wyvern -- Graceful Vigor</title>
     </head>
     <body class="fullbleed layout vertical" onload="onLoad(0);">        
         <paper-drawer-panel>
             <div drawer>
                 <paper-menu>
-                    <paper-item onclick="selectPage()(0);">Home</paper-item>
-                    <paper-item onclick="selectPage()(1);">Language Guide</paper-item>
-                    <paper-item onclick="selectPage()(2);">Team</paper-item>
-                    <paper-item onclick="selectPage()(3);">Theory</paper-item>
-                    <paper-item onclick="selectPage()(4);">Vim Package</paper-item>
-                    <paper-item onclick="selectPage()(5);">Contributing</paper-item>
+                    <paper-item onclick="selectPage()(0, 'home');">Home</paper-item>
+                    <paper-item onclick="selectPage()(1, 'language_guide');">Language Guide</paper-item>
+                    <paper-item onclick="selectPage()(2, 'team');">Team</paper-item>
+                    <paper-item onclick="selectPage()(3, 'theory');">Theory</paper-item>
+                    <paper-item onclick="selectPage()(4, 'vim_package');">Vim Package</paper-item>
+                    <paper-item onclick="selectPage()(5, 'contributing');">Contributing</paper-item>
                 </paper-menu>
             </div>
             <div main>
