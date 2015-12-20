@@ -2,6 +2,7 @@
     <head>
         <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
         <script src="scripts/page-nav.js"></script>
+        <script src="vendor/prism/prism.js"></script>
 
         <link rel="import" href="bower_components/polymer/polymer.html">
         <link rel="import" href="bower_components/paper-button/paper-button.html">
@@ -17,6 +18,7 @@
         <link rel="import" href="dark-side/dark-side.html">
         <link rel="stylesheet" href="dark-side/dark-side.css" type="text/css">
         <link rel="stylesheet" href="assets/stylesheets/index.css" type="text/css">
+        <link rel="stylesheet" href="vendor/prism/prism.css">
 
         <title>Wyvern -- Graceful Vigor</title>
     </head>
@@ -29,14 +31,21 @@
                     <paper-item onclick="selectPage()(2);">Team</paper-item>
                     <paper-item onclick="selectPage()(3);">Theory</paper-item>
                     <paper-item onclick="selectPage()(4);">Vim Package</paper-item>
+                    <paper-item onclick="selectPage()(5);">Contributing</paper-item>
                 </paper-menu>
             </div>
             <div main>
                 <iron-pages>
                     <div>
                         <h1>Home</h1>
-                    </div>
-                    
+                          <div>
+                            <paper-card>
+                                <div class="card-content">
+                                  <p>Wyvern is a strongly typed, minimalistic language with LLVM and JVM backend targets. Wyvern allows for embedded DSLs, built in as type-safe record-type or sum-type constructs with custom syntax.</p>
+                               </div>
+                            </paper-card>
+                        </div>
+                     </div>
                     <div>
                         <h1>Language Guide</h1>
                     </div>
@@ -70,8 +79,24 @@
                         </div>
                     </div>
                    <div>
-                        <h1>Vim Package</h1>
-                    </div>
+                     <h1>Vim Package</h1>
+                   </div>
+                   <div>
+                     <h1>Contributing</h1>
+                     <paper-card>
+                       <div class="card-content">
+                         <p>The Wyvern source code can be found <a href="https://github.com/wyvernlang/wyvern">here</a>.</p>
+                         <p>To run the tests, first, clone the repo. Set your a variable that references the build directory, then change into it. Then, run ant.
+                                  <pre><code class="language-bash">
+                                    git clone git@github.com:wyvernlang/wyvern.git $HOME/wyvern
+                                    WYVERN=$HOME/wyvern
+                                    cd $WYVERN/tools
+                                    ant test
+                                  </code></pre>
+                         <p>Don't have ant? You can download it <a href="http://ant.apache.org/bindownload.cgi">here</a>.</p>
+                       </div>
+                     </paper-card>
+                   </div>
                 </iron-pages>
             </div>
     </body>
