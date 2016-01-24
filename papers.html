@@ -22,7 +22,7 @@
         <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Libre+Baskerville:700' type='text/css'>
         <title>Wyvern -- Graceful Vigor</title>
     </head>
-    <body class="fullbleed layout vertical">
+    <body class="fullbleed layout vertical" onload="onLoad(0);">        
         <paper-drawer-panel>
             <div drawer>
                 <paper-menu>
@@ -34,18 +34,31 @@
                 </paper-menu>
             </div>
             <div main>
-                <div>
-                    <h1>Home</h1>
-                      <div>
+               <div>
+                    <h1>Papers</h1>
+                    <p>Wyvern has a handful of publications describing the theory and motivations.</p>
+                    <div>
                         <paper-card>
                             <div class="card-content">
-                              <p>Wyvern is a strongly typed, minimalistic language with LLVM and JVM backend targets. Wyvern allows for embedded DSLs, built in as type-safe record-type or sum-type constructs with custom syntax.</p>
+                                <p>Wyvern allows type-safe DSLs to be encoded as literals.</p>
+                            </div>
+                            <div class="card-actions">
+                                <paper-button raised onclick="rippleAndOpenNewWindow('http://www.cs.cmu.edu/~aldrich/papers/ecoop14-tsls.pdf');">Check it out</paper-button>
                             </div>
                         </paper-card>
                     </div>
-                 </div>
-               </div>
+
+                    <div>
+                        <paper-card>
+                            <div class="card-content">
+                                <p>Wyvern maps very closely to lambda calculus. Only the module system isn't directly mapped. Classes are actually just syntactic sugar.</p>
+                            </div>
+                            <div class="card-actions">
+                                <paper-button raised onclick="rippleAndOpenNewWindow('http://www.cs.cmu.edu/~aldrich/papers/maspeghi13.pdf');">Check it out</paper-button>
+                            </div>
+                        </paper-card>
+                    </div>
+                </div>
             </div>
-        </paper-drawer-panel>
     </body>
 </html>

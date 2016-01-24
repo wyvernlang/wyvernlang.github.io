@@ -22,30 +22,21 @@
         <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Libre+Baskerville:700' type='text/css'>
         <title>Wyvern -- Graceful Vigor</title>
     </head>
-    <body class="fullbleed layout vertical">
+    <body class="fullbleed layout vertical" onload="onLoad(0);">        
         <paper-drawer-panel>
             <div drawer>
                 <paper-menu>
                     <paper-item onclick="location.href = '/';">Home</paper-item>
                     <paper-item onclick="location.href = '/language_guide.html';">Language Guide</paper-item>
-                    <paper-item onclick="location.href = '/team.html';">Team</paper-item>
+                    <paper-item onclick="location.href = '/team.html';">Papers</paper-item>
                     <paper-item onclick="location.href = '/papers.html';">Papers</paper-item>
                     <paper-item onclick="location.href = '/contributing.html';">Contributing</paper-item>
                 </paper-menu>
             </div>
             <div main>
-                <div>
-                    <h1>Home</h1>
-                      <div>
-                        <paper-card>
-                            <div class="card-content">
-                              <p>Wyvern is a strongly typed, minimalistic language with LLVM and JVM backend targets. Wyvern allows for embedded DSLs, built in as type-safe record-type or sum-type constructs with custom syntax.</p>
-                            </div>
-                        </paper-card>
-                    </div>
-                 </div>
-               </div>
+               <div>
+                    <h1>Team</h1>
+                </div>
             </div>
-        </paper-drawer-panel>
     </body>
 </html>

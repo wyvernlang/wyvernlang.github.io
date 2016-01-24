@@ -22,11 +22,11 @@
         <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Libre+Baskerville:700' type='text/css'>
         <title>Wyvern -- Graceful Vigor</title>
     </head>
-    <body class="fullbleed layout vertical">
+    <body class="fullbleed layout vertical;"> 
         <paper-drawer-panel>
             <div drawer>
                 <paper-menu>
-                    <paper-item onclick="location.href = '/';">Home</paper-item>
+                    <paper-item onclick="location.href = '/;">Home</paper-item>
                     <paper-item onclick="location.href = '/language_guide.html';">Language Guide</paper-item>
                     <paper-item onclick="location.href = '/team.html';">Team</paper-item>
                     <paper-item onclick="location.href = '/papers.html';">Papers</paper-item>
@@ -35,17 +35,22 @@
             </div>
             <div main>
                 <div>
-                    <h1>Home</h1>
-                      <div>
-                        <paper-card>
-                            <div class="card-content">
-                              <p>Wyvern is a strongly typed, minimalistic language with LLVM and JVM backend targets. Wyvern allows for embedded DSLs, built in as type-safe record-type or sum-type constructs with custom syntax.</p>
-                            </div>
-                        </paper-card>
-                    </div>
-                 </div>
-               </div>
+                  <h1>Contributing</h1>
+                    <paper-card>
+                      <div class="card-content">
+                        <p>The Wyvern source code can be found <a href="https://github.com/wyvernlang/wyvern">here</a>.</p>
+                        <p>To run the tests, first, clone the repo. Set your a variable that references the build directory, then change into it. Then, run ant.
+                              <pre><code class="language-bash">
+                                git clone git@github.com:wyvernlang/wyvern.git $HOME/wyvern
+                                WYVERN=$HOME/wyvern
+                                cd $WYVERN/tools
+                                ant test
+                              </code></pre>
+                        <p>Don't have ant? You can download it <a href="http://ant.apache.org/bindownload.cgi">here</a>.</p>
+                      </div>
+                   </paper-card>
+                </div>
             </div>
-        </paper-drawer-panel>
+         </paper-drawer-panel>
     </body>
 </html>
