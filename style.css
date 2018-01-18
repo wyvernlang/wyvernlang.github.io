@@ -1,0 +1,177 @@
+html { 
+  padding:0px;
+  margin:0px;
+}
+
+body {
+
+  background-color: #DECFC4;
+  font-size: 14px;
+  font-family: Georgia;
+  color:#564b47;  
+  padding:0px;
+}
+
+
+
+
+/**CSS for menu and header*/
+#menu {
+	border-bottom: solid 1px #999999;
+	font-family: "Trebuchet MS";
+}
+
+#menu h1 {
+font-size: 64px;
+background: url(pattern_148.gif);
+background-color: #A36C42;
+background-repeat: repeat-x;
+font-family: tahoma;
+text-transform:lowercase;
+text-align: right;
+color: #ffffff;
+padding:1px 15px 5px 10px;
+letter-spacing: -5px; 
+margin:0px;
+}
+
+#menu ul {
+	margin: 0px; 
+	list-style:none;
+	font-size:18px;
+	background-color: #ffffff;
+	padding-left: 30px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#menu li { 
+	display: inline; 
+	padding-right: 20px; 
+	padding-left: 20px; 
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#menu li.active {
+	background-color: #B68C6E;
+	color: #ffffff;
+	text-decoration: none;
+	margin-bottom: -2px;
+}
+
+#menu li.active a {
+	color: #ffffff;
+}
+
+#menu a, #navigation a:visited {
+	color: #ae0001;
+	text-decoration: none;
+	margin-bottom: -2px;
+}
+#menu a:hover {
+	border-bottom: 3px solid #600600;
+	color: #600600;
+}
+
+
+
+/* CSS for main content*/
+#content h1 {
+	font-size: 150%;
+	color: #ae0001;
+	font-family: "Trebuchet MS";
+}
+
+#content h2 {
+	font-size: 125%;
+	color: #653916;
+	font-family: "Trebuchet MS";
+}	
+
+#content h3 {
+	font-size: 100%;
+	color: #653916;
+	font-family: "Trebuchet MS";
+}		
+ 
+#content pre { 
+color: #564b47;
+font-size: 12px;
+background-color:transparent;
+font-family: Courier, Monaco, Monospace;
+border: 1px dashed #ac552a;
+padding: 5px;
+}
+
+#content a, #content a:visited { color: #ae0001; text-decoration: none;}
+#content a:hover {
+	color: #ae0001;
+	text-decoration: underline;
+}
+
+
+
+/*twitter stuff*/
+#twitter_update_list {
+	list-style:none;
+}
+
+#twitter_update_list li {
+	margin-left: -40px;
+}
+
+
+/*  positioning-layers statisch und absolut */
+#top {
+margin: 25px;
+background-color: #ffffff;
+}
+
+#content {
+	padding: 5px;
+}
+
+ul.papers {
+	list-style:none;
+}
+
+ul.papers li {
+	padding-bottom:10px;
+}
+
+ul.spaced li {
+	padding-bottom:6px;
+}
+
+span.paren {
+	font-size: 75%
+}
+
+#leftcol {
+  	width: 240px;
+	float:left;
+  	background-color: #ffffff;
+  	padding: 0px 10px 10px 10px;
+  	margin: 0px -1px 0px 0px;
+	border-right: 1px solid #999999;
+}
+#inhalt {
+	padding: 0px 10px 10px 20px;
+	background-color:#ffffff;
+	margin:0px 0px 0px 260px;
+	border-left: 1px solid #999999;
+}
+
+#footer {
+	background-color: #A36C42;
+	font-size: 12px;
+	font-family: Georgia;
+	color:#ffffff;  
+	bottom: 0px;
+	padding: 5px;
+	clear: left;
+	text-align: right;
+}
+
+#footer a, #footer a:visited, #footer a:hover  {
+	color: #ffffff; text-decoration: underline;
+}

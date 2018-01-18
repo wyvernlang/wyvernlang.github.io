@@ -1,14 +1,89 @@
-<html>
-  <head>
-    <title>Wyvern Programming Language</title>
-  </head>
-  <body>
-    <h1>Wyvern Programming Language (Web Page Under Construction)</h1>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+		<title>The Wyvern Programming Language</title>
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
 
-    <ul>
-      <li><a href="https://github.com/wyvernlang/wyvern/wiki">Wyvern Wiki</a></li>
-      <li><a href="http://www.cs.cmu.edu/~aldrich/wyvern/">Current Working Web Page</a></li>
-      <li><a href="./incomplete/">Old Prototype Web Page</a></li>
-    </ul>
-  </body>
+<body>
+	<div id="top">
+	<div id="menu">
+<h1>Wyvern</h1>
+</div>
+	<div id="content">
+
+<h2>The Wyvern Programming Language</h2>
+
+Wyvern is a new programming language designed to help developers be highly productive when writing high-assurance applications.  The first major innovation in Wyvern is <a href="http://www.cs.cmu.edu/~aldrich/papers/ecoop14-tsls.pdf">type-specific languages</a>, a feature that allows programmers to create literals of a given type (e.g. a SQLQuery type) in a language appropriate to that type (e.g. SQL).  We are currently working on the Wyvern <a href="http://www.cs.cmu.edu/~aldrich/papers/maspeghi13.pdf">object model</a> and on providing architects with more <a href="http://www.cs.cmu.edu/~aldrich/papers/iwaco2014-arch-control.pdf">architectural control</a>.
+
+<p>The ongoing implementation of Wyvern is <a href="https://github.com/wyvernlang/wyvern">available</a> on GitHub.  We have also written a <a href="https://github.com/wyvernlang/wyvern/wiki/Wyvern:-A-Language-for-Usable-Design-Driven-Assurance">manifesto</a> describing the goals and core ideas behind the design of the language.</p>
+
+<!-- <h2>News</h2>
+
+Our <a href="http://www.cs.cmu.edu/~aldrich/papers/ecoop14-tsls.pdf">ECOOP 2014</a> paper won a distinguished paper award!  See CMU's <a href="http://www.cs.cmu.edu/news/carnegie-mellon-developing-programming-language-accommodates-multiple-languages-same-program">press release</a> and coverage by <a href="http://sdtimes.com/wyvern-language-works-platforms-interchangeably/">SD Times</a>.
+-->
+<h2>Publications Related to Wyvern</h2>
+<ul>
+<li><a href="http://www.cs.cmu.edu/~aldrich/papers/ecoop17modules.pdf">A Capability-Based Module System for Authority Control</a>.
+Darya Melicher, Yangqingwei Shi, Alex Potanin, and Jonathan Aldrich.
+Proc. European Conference on Object-Oriented Programming (ECOOP), June 2017.</li>
+<li><a href="http://www.cs.cmu.edu/~aldrich/papers/ecoop15-tags.pdf">A Theory of Tagged Objects</a>.  Joseph Lee, Jonathan Aldrich, Troy Shaw, and Alex Potanin.  <i>Proc. European Conference on Object-Oriented Programming (ECOOP)</i>, 2015.</li>
+<li><a href="http://www.cs.cmu.edu/~aldrich/papers/sac15-tsms.pdf">Composable and Hygienic Typed Syntax Macros</a>.  Cyrus Omar, Chenglong Wang, and Jonathan Aldrich.  <i>Proc. Symposium on Applied Computing (SAC)</i>, 2015.</li>
+<li><a href="http://www.cs.cmu.edu/~aldrich/papers/LiPotaninAldrichFTfJP2015.pdf">Delegation vs. Inheritance for Typestate Analysis</a>.  Du Li, Alex Potanin, and Jonathan Aldrich.  In <i>Proceedings of Formal Techniques for Java Like Programs (FTfJP)</i>, 2015.</li>
+<li><a href="http://www.cs.cmu.edu/~aldrich/papers/plateau14-wyvern.pdf">Wyvern: Impacting Software Security via Programming Language Design</a>. Darya Kurilova, Alex Potanin, and Jonathan Aldrich. Proc. <i>Evaluation and Usability of Programming Languages and Tools (PLATEAU)</i>, 2014.</li>
+<li><a href="http://www.cs.cmu.edu/~aldrich/papers/ecoop14-tsls.pdf">Safely Composable Type-Specific Languages</a>.  Cyrus Omar, Darya Kurilova, Ligia Nistor, Benjamin Chung, Alex Potanin, and Jonathan Aldrich.  Proc. European Conference on Object-Oriented Programming, 2014.</li>
+<li><a href="http://www.cs.cmu.edu/~aldrich/papers/iwaco2014-arch-control.pdf">Language-Based Architectural Control</a>.  Jonathan Aldrich, Cyrus Omar, Alex Potanin, and Du Li.  In <i>International Workshop on Aliasing, Capabilities, and Ownership (IWACO '14)</i>, 2014.</li>
+<li><a href="http://www.cs.cmu.edu/~aldrich/papers/maspeghi13.pdf">Wyvern: A Simple, Typed, and Pure Object-Oriented Language</a>.  Ligia Nistor, Darya Kurilova, Stephanie Balzer, Benjamin Chung, Alex Potanin, and Jonathan Aldrich.  In <i>Mechanisms for Specialization, Generalization, and Inheritance (MASPEGHI)</i>, 2013.</li>
+<li><a href="http://www.cs.cmu.edu/~aldrich/papers/globaldsl13.pdf">Type-Directed, Whitespace-Delimited Parsing for Embedded DSLs</a>.  Cyrus Omar, Benjamin Chung, Darya Kurilova, Alex Potanin, and Jonathan Aldrich.  In <i>Globalization of Domain Specific Languages (GlobalDSL)</i>, 2013.</li>
+</ul>
+
+<!--
+<h2>Other Wyvern Documentation</h2>
+<ul>
+<li>A <a href="spec-rationale.html">Specification and Rationale</a> document for Wyvern, unfortunately incomplete and now somewhat out of date.  The papers above are the best reference for Wyvern's research contributions.</li>
+</ul>
+-->
+<h2>People</h2>
+<h3>Carnegie Mellon University</h3>
+<ul>
+  <li><a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich</a></li>
+  <li><a href="http://www.cs.cmu.edu/~dkurilov/">Darya Melicher</a></li>
+  <li>Selva Samuel</li>
+  <!--
+  <li><a href=""></a></li>
+  -->
+</ul>
+<h3>Victoria University of Wellington</h3>
+<ul>
+  <li><a href="http://homepages.mcs.vuw.ac.nz/~alex/">Alex Potanin</a></li>
+  <li>Julian Mackay</li>
+  <li>Aaron Craig</li>
+</ul>
+
+<h3>Past project members</h3>
+<ul>
+  <li><a href="http://www.cs.cmu.edu/~balzers/">Stephanie Balzer</a></li>
+  <li>Benjamin Chung</li>
+  <li>Joseph Lee</li>
+  <li><a href="http://www.cs.cmu.edu/~duli/">Du Li</a></li>
+  <li>Robbie McKinstry</li>
+  <li><a href="http://www.cs.cmu.edu/~lnistor/">Ligia Nistor</a></li>
+  <li><a href="http://cyrus.omar.name/">Cyrus Omar</a></li>
+  <li>Mitchell Plamann</li>
+  <li>Troy Shaw</li>
+  <li><a href="http://chenglongwang.org/">Chenglong Wang</a></li>
+  <li>Valerie Zhao</li>
+</ul>
+
+The Wyvern project is supported by the National Security Agency lablet at Carnegie Mellon University, and by the DARPA BRASS program.
+
+	</div>
+	<div id="footer">
+	Copyright 2014 Jonathan Aldrich<br>
+	Plaid pattern from <a href="http://www.squidfingers.com/patterns/">SquidFingers</a><br>
+	</div>
+	</div>
+</body>
 </html>
