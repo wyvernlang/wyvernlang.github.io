@@ -12,9 +12,6 @@ body {
   padding:0px;
 }
 
-
-
-
 /**CSS for menu and header*/
 #menu {
 	border-bottom: solid 1px #999999;
@@ -23,7 +20,7 @@ body {
 
 #menu h1 {
 font-size: 64px;
-background: url(pattern_148.gif);
+background: url(images/patterntop.gif);
 background-color: #A36C42;
 background-repeat: repeat-x;
 font-family: tahoma;
@@ -72,8 +69,6 @@ margin:0px;
 	color: #600600;
 }
 
-
-
 /* CSS for main content*/
 #content h1 {
 	font-size: 150%;
@@ -108,8 +103,6 @@ padding: 5px;
 	text-decoration: underline;
 }
 
-
-
 /*twitter stuff*/
 #twitter_update_list {
 	list-style:none;
@@ -118,7 +111,6 @@ padding: 5px;
 #twitter_update_list li {
 	margin-left: -40px;
 }
-
 
 /*  positioning-layers statisch und absolut */
 #top {
