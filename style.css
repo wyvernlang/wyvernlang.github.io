@@ -90,8 +90,17 @@ code {
   font-weight: 700;
   letter-spacing: -0.5px;
   color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .nav-brand:hover { color: var(--color-primary-dark); }
+
+.nav-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
 
 .nav-links {
   list-style: none;
@@ -160,8 +169,16 @@ code {
 .hero {
   background: linear-gradient(135deg, #6d28d9 0%, #2563eb 50%, #0ea5e9 100%);
   color: #fff;
-  padding: 80px 0 90px;
+  padding: 60px 0 80px;
   text-align: center;
+}
+
+.hero-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto 24px;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.25));
 }
 
 .hero h1 {
